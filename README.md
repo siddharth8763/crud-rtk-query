@@ -1,0 +1,2 @@
+- Change the respective .env.text file to .env.
+- Add your env variables and proceed
