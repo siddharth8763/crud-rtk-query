@@ -4,7 +4,7 @@ import { authApi } from "./authApi";
 import { RootState } from "../redux/store/store";
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: import.meta.env.VITE_API_URL,
+  baseUrl: "/api",
   credentials: "include", // Only for refresh token via cookie
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.accessToken;

@@ -4,7 +4,7 @@ import { AuthResponse, LoginCredentials, RegisterCredentials } from "../types";
 export const authApi = createApi({
   reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_API_URL,
+    baseUrl: "/api",
     credentials: "include", // ✅ Ensures cookies are sent
   }),
   endpoints: (builder) => ({
